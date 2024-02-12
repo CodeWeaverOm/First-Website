@@ -1,0 +1,128 @@
+/* THIS IS STYLE SHEET FOR THE DIVICES WITH WIDTH 580PX TO 250PX */
+
+@media screen and (250px<=width <=580px) {
+
+  body {
+    background-color: rgb(95, 67, 52);
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .top {
+    height: 20vh;
+  }
+
+  .top img {
+    width: 15px;
+    height: 15px;
+    margin: 2px 5px;
+    border: auto;
+  }
+
+  #phone {
+    order: 0;
+    /* Set order of phone icon to ensure it comes after mail icon */
+    margin-right: 10px;
+  }
+
+  #imna {
+    display: grid;
+    justify-content: center;
+    grid-template-areas:
+      'img'
+      'nam';
+    margin: 20px;
+
+  }
+
+  #myimage {
+    width: 35px;
+    height: 35px;
+
+  }
+
+  .top name {
+    font-size: 15px;
+
+  }
+
+  #image img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .education #bio {
+
+    overflow-y: auto;
+    width: 350px;
+    height: 200px;
+  }
+
+  .education #bio bio {
+    font-size: 15px;
+  }
+
+  .skills text {
+    font-size: 15px;
+
+  }
+
+  #list div1,
+  div2 {
+    display: inline;
+  }
+
+  #list ul li {
+    list-style: none;
+    font-size: 10px;
+    margin-top: 10px;
+    font-family: "Protest Riot", sans-serif;
+  }
+
+  /* adding image as symbol before a list element */
+  #list ul li::before {
+    content: "";
+    background-image: url('list content.png');
+    background-size: contain;
+    height: 7px;
+    width: 7px;
+    margin-right: 4px;
+  }
+
+  .exp p {
+    font-size: 10px;
+    overflow: hidden;
+  }
+
+  #potflio text1 {
+    font-size: 28px;
+  }
+
+  .parent {
+    width: 70%;
+    height: 300px;
+  }
+
+  .in text {
+    font-size: 20px;
+  }
+
+  .text {
+    overflow: hidden;
+  }
+
+  .in description {
+    width: 150px;
+    font-size: 10px;
+  }
+
+  .slidebutton button {
+    height: 20px;
+    width: 100px;
+    top: 20px;
+    left: 20px;
+  }
+}

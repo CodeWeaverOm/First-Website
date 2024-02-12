@@ -1,0 +1,357 @@
+/* No changes required in this section */
+
+body {
+  background-color: rgb(95, 67, 52);
+  margin: 0;
+  padding: 0;
+}
+
+body a {
+  /* This remove all underlines from all anchor tags */
+  text-decoration: none;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 40vh;
+  position: relative;
+}
+
+/* Adding background image for top */
+
+.top::before {
+  content: "";
+  background-image: url('BACKGROUND_IMG.avif');
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#mail {
+  order: -1;
+  /* Change the order of mail icon to bring it to the start */
+}
+
+#phone {
+  order: 0;
+  /* Set order of phone icon to ensure it comes after mail icon */
+  margin-right: auto;
+}
+
+/* Adding style all social media icons at top */
+.top img {
+  width: 30px;
+  height: 30px;
+  margin: 8px 20px;
+  border: auto;
+  flex-grow: initial;
+}
+
+#imna {
+  display: grid;
+  justify-content: center;
+  grid-template-areas:
+    'img'
+    'nam';
+  margin: auto;
+
+}
+
+/* Adding style to profile image on top of this webpage */
+#myimage {
+  width: 70px;
+  height: 70px;
+  border: 3px solid black;
+  border-radius: 50%;
+  border-color: black;
+  box-shadow: 3px 3px 30px black;
+  grid-area: img;
+  margin: auto;
+  padding: 0%;
+
+}
+
+.top name {
+  font-size: 30px;
+  color: rgb(80, 51, 35);
+  font-family: "Dancing Script", cursive;
+  grid-area: nam;
+}
+
+.education {
+  display: flex;
+  position: relative;
+  top: 10px;
+}
+
+#image {
+  margin-left: auto;
+}
+
+#image img {
+  width: 400px;
+  height: 400px;
+
+}
+
+.education bio {
+  font-size: 40px;
+  font-family: "Poor Story", system-ui;
+  align-self: center;
+  color: wheat;
+
+}
+
+/* skill container design */
+.skills {
+  display: grid;
+  justify-content: center;
+  color: rgb(67, 55, 33);
+  position: relative;
+  top: 30px;
+  border-radius: 40px;
+  background-color: wheat;
+  width: 100%;
+}
+
+.skills text {
+  font-size: 30px;
+  width: 100%;
+  text-align: center;
+  font-family: "Protest Riot", sans-serif;
+}
+
+/* DESIGNING ALL LIST ELEMNENTS FOR SKILLS */
+#list {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+#list ul {
+  margin: 10px 20px;
+}
+
+.skills ul li {
+  list-style: none;
+  margin-top: 10px;
+  font-size: 30px;
+  font-family: "Protest Riot", sans-serif;
+}
+
+/* adding image as symbol before a list element */
+.skills ul li::before {
+  content: "";
+  background-image: url('list content.png');
+  background-size: contain;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* EXPIRIANCE SECTION DESIGN */
+.exp {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.exp text {
+  color: #f5deb3;
+  font-family: "Protest Riot", sans-serif;
+  color: rgb(67, 55, 33);
+}
+
+.exp p {
+  font-size: 20px;
+  font-family: "Poor Story", system-ui;
+}
+
+/* project potfolio */
+#potflio {
+  display: flex;
+  position: relative;
+}
+
+#potflio text1 {
+  font-size: 70px;
+  font-family: "Protest Riot", sans-serif;
+  color: #f5deb3;
+  position: relative;
+  top: 90px;
+  left: 20px;
+  width: 200px;
+}
+
+body h1 {
+  color: wheat;
+  font-size: 30px;
+}
+
+.parent {
+  width: 50%;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 40px;
+  margin-bottom: 30px;
+  margin-left: auto;
+}
+
+.a {
+  position: relative;
+  left: 0;
+  top: 40px;
+  width: 400%;
+  animation: 20s slide infinite;
+
+}
+
+.in {
+  position: relative;
+  width: 25%;
+  float: left;
+  z-index: 1;
+
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 15%;
+  left: 5%;
+}
+
+.in text {
+  font-size: 40px;
+  width: 100%;
+  text-align: left;
+  color: rgb(2, 2, 2);
+  margin-bottom: 30px;
+  font-family: "Protest Riot", sans-serif;
+  color: rgb(95, 67, 52);
+}
+
+.in description {
+  width: 400px;
+  height: auto;
+  font-size: 20px;
+  font-family: "Poor Story", system-ui;
+}
+
+.slidebutton button {
+  background-color: rgb(95, 67, 52);
+  height: 50px;
+  width: 150px;
+  color: wheat;
+  font-family: "Protest Riot", sans-serif;
+  border-radius: 30%;
+  position: relative;
+  top: 20px;
+  left: 90px;
+}
+
+.slidebutton button:hover {
+  background-color: wheat;
+  height: 50px;
+  width: 150px;
+  color: rgb(95, 67, 52);
+  box-shadow: 5px 5px 30px black;
+}
+
+.background {
+  width: 100%;
+  background-color: wheat;
+  height: 500px;
+  border-radius: 40px;
+
+}
+
+/* Adding animation to all project slides */
+@keyframes slide {
+  0% {
+    left: 0;
+  }
+
+  8% {
+    left: 0;
+  }
+
+  16% {
+    left: -100%;
+  }
+
+  24% {
+    left: -100%;
+  }
+
+  32% {
+    left: -200%;
+  }
+
+  40% {
+    left: -200%;
+  }
+
+  48% {
+    left: -300%;
+  }
+
+  56% {
+    left: -300%;
+  }
+
+  64% {
+    left: -200%;
+  }
+
+  72% {
+    left: -200%;
+  }
+
+  80% {
+    left: -100%;
+  }
+
+  88% {
+    left: -100%;
+  }
+
+  95% {
+    left: 0;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+
+
+/* Adding media quries for screen below 840px */
+@media screen and (max-width : 840px) {
+  .in text {
+    font-size: 20px;
+  }
+
+  .in description {
+    width: 250px;
+    font-size: 20px;
+
+  }
+
+  .slidebutton button {
+    height: 25px;
+    width: 75px;
+  }
+}
